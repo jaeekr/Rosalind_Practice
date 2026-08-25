@@ -1,0 +1,18 @@
+with open("Tests/rosalind_revc.txt", "r") as f:
+    dna_string = f.read().strip()
+    
+#dna_string= input("input DNA string: ")
+
+#make key for what to translate
+table= {"A":"T", "G":"C", "T":"A", "C":"G"}
+
+#reverse dna+string
+reverse_string= dna_string[::-1]
+
+#use the function so translation is saved
+complementry_table= str.maketrans(table)
+
+
+
+#translate the reverse string 
+print(reverse_string.translate(complementry_table))

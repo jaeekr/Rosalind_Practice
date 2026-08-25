@@ -1,0 +1,11 @@
+n= int(input("Enter n value:"))
+k= int(input("Enter k value:"))
+#starting 1 pair of rabbit
+
+prev, curr= 1,1
+# (start, stop), in prev,curr w already account for month 1-2
+for month in range(3, n+ 1):
+    prev, curr = curr, curr + k * prev
+
+print(curr)
+
