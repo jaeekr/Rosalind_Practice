@@ -1,10 +1,10 @@
 
 import re
 pattern= r">Rosalind"
-file_path=  "/Users/jaeeraut/Downloads/rosalind_gc (1).txt"
+file_path=  "file_name"
 samp_sets= {}
 current_id=""
-with open("/Users/jaeeraut/Downloads/rosalind_gc (1).txt", "r") as f:
+with open(file_path, "r") as f:
     #fasta = f.read().strip()
     for line_num, line in enumerate(f,1):
         if re.search(pattern,line):
@@ -32,12 +32,8 @@ max_key= max(samp_perc,key=samp_perc.get)
 
 print(f'{max_key}: {max_value*100}%')
 
-#print(f'The total amount of nucleotides is {tot_nuc} and total number of G or C is {tot_GC}')
-#print(f"The percentage of GC is:" ((tot_GC/tot_nuc) * 100))
+
 
 
         
-#make another dictaniary that stores the percent GC count from what i am currently using for each vlaue,
-#  then i could in another for loop go trohugh which value is the biggest
-
          
