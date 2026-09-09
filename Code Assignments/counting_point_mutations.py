@@ -1,5 +1,5 @@
 
-file_path=  "/Users/jaeeraut/Downloads/rosalind_hamm.txt"
+file_path=  "file_name"
 
 with open(file_path, "r") as f:
     first_line= f.readline().strip()
